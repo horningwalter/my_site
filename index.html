@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walter Horning Jr. | Senior Data Scientist & AI/ML Engineer</title>
+    <meta name="description" content="Senior Data Scientist & AI/ML Engineer with 15+ years in IT and 8+ years in Data Science. Specialized in Machine Learning, Generative AI, NLP, and Data Engineering.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>WH<span class="logo-slash">/</span><span class="logo-bracket">&gt;</span>
+            </a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#contact" class="nav-link nav-cta">Let's Talk</a></li>
+            </ul>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-grid"></div>
+        <div class="hero-particles" id="particles"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    Available for Freelance Projects
+                </div>
+                <h1 class="hero-title">
+                    <span class="hero-greeting">Hi, I'm</span>
+                    <span class="hero-name">Walter Horning Jr.</span>
+                </h1>
+                <div class="hero-roles">
+                    <span class="role-static">Senior</span>
+                    <span class="role-dynamic" id="typed-role"></span>
+                    <span class="typed-cursor">|</span>
+                </div>
+                <p class="hero-description">
+                    Turning complex data into measurable business impact.
+                    <strong>15+ years in IT</strong>, <strong>8+ years in Data Science & AI</strong>.
+                    From route optimization saving 13% in costs to pipelines running 6,000x faster &mdash;
+                    I deliver results that move the needle.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i> View My Work
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-paper-plane"></i> Hire Me
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number" data-target="15">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Years in IT</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="8">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Years in Data/AI</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="50">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Projects Delivered</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="6">0</span>
+                        <span class="stat-label">Industries Served</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <div class="image-glow"></div>
+                    <img src="img/walterjr.png" alt="Walter Horning Jr." loading="eager">
+                    <div class="image-ring"></div>
+                </div>
+                <div class="floating-card card-1">
+                    <i class="fas fa-brain"></i>
+                    <span>AI/ML</span>
+                </div>
+                <div class="floating-card card-2">
+                    <i class="fas fa-database"></i>
+                    <span>Big Data</span>
+                </div>
+                <div class="floating-card card-3">
+                    <i class="fas fa-robot"></i>
+                    <span>GenAI</span>
+                </div>
+            </div>
+        </div>
+        <a href="#about" class="scroll-indicator">
+            <span>Scroll</span>
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">About Me</span>
+                <h2 class="section-title">Bridging Data Science <br>& Business Impact</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-lead">
+                        I'm a Senior Data Scientist and AI/ML Engineer based in <strong>Curitiba, Brazil</strong>,
+                        with a B.Sc. in Computer Science from the Federal University of Parana (UFPR).
+                        I specialize in transforming complex business challenges into scalable, production-ready
+                        AI solutions.
+                    </p>
+                    <p>
+                        Over my career, I've worked across <strong>e-commerce, logistics, fintech, insurance,
+                        and retail</strong> &mdash; always with a focus on end-to-end ownership: from problem definition
+                        and data exploration through model development, deployment, and monitoring.
+                    </p>
+                    <p>
+                        I'm also an educator and author. I wrote <em>"Python para Analise de Dados &mdash; Do Zero ao Insight"</em>
+                        and teach Python to professionals transitioning into tech. I believe the best solutions
+                        come from combining creative thinking with rigorous technical execution.
+                    </p>
+                    <blockquote class="about-quote">
+                        "What moves me is not what is new, but what is not yet imagined."
+                    </blockquote>
+                </div>
+                <div class="about-highlights">
+                    <div class="highlight-card">
+                        <div class="highlight-icon"><i class="fas fa-chart-line"></i></div>
+                        <h3>Business Impact</h3>
+                        <p>Every model I build is measured by the business value it delivers &mdash; not just accuracy scores.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon"><i class="fas fa-code-branch"></i></div>
+                        <h3>End-to-End Ownership</h3>
+                        <p>From raw data to production API. I handle the full lifecycle so you get a complete solution.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon"><i class="fas fa-comments"></i></div>
+                        <h3>Clear Communication</h3>
+                        <p>I translate complex technical concepts into actionable insights for any audience.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon"><i class="fas fa-bolt"></i></div>
+                        <h3>Proven Results</h3>
+                        <p>6,000x pipeline speedup. 33% accuracy improvement. 13% cost reduction. Real numbers, real impact.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Metrics Banner -->
+    <section class="metrics-banner">
+        <div class="container">
+            <div class="metrics-grid">
+                <div class="metric">
+                    <span class="metric-value">6,000x</span>
+                    <span class="metric-label">Pipeline Performance Gain</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-value">33%</span>
+                    <span class="metric-label">Prediction Accuracy Boost</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-value">13%</span>
+                    <span class="metric-label">Operational Cost Reduction</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-value">22%</span>
+                    <span class="metric-label">Customer Satisfaction Increase</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section experience" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Career Path</span>
+                <h2 class="section-title">Professional Experience</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Python Instructor</h3>
+                                <span class="timeline-company">Do Zero ao Insight</span>
+                            </div>
+                            <span class="timeline-date">Aug 2024 &mdash; Present</span>
+                        </div>
+                        <span class="timeline-industry">Education & Training</span>
+                        <p>Designed hands-on Python for Data Analysis course. Authored the book <em>"Python para Analise de Dados"</em>. Teaching Python to diverse audiences transitioning into tech.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Senior Data Scientist</h3>
+                                <span class="timeline-company">ALLOS</span>
+                            </div>
+                            <span class="timeline-date">Jun 2024 &mdash; Jan 2025</span>
+                        </div>
+                        <span class="timeline-industry">Retail Real Estate</span>
+                        <p>Big Data pipelines with PySpark achieving <strong>6,000x speedup</strong>. Fuzzy matching at 98% accuracy. KPI dashboards in Databricks for executive decision-making.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Senior Data Scientist</h3>
+                                <span class="timeline-company">Prudential do Brasil</span>
+                            </div>
+                            <span class="timeline-date">Feb 2024 &mdash; May 2024</span>
+                        </div>
+                        <span class="timeline-industry">Insurance & Financial Services</span>
+                        <p>Launched the company's AI practice from the ground up. Led foundational GenAI and advanced analytics projects. Enhanced data governance and data lake architecture.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Principal Data Scientist</h3>
+                                <span class="timeline-company">Swap (Fintech)</span>
+                            </div>
+                            <span class="timeline-date">Jan 2022 &mdash; Jun 2023</span>
+                        </div>
+                        <span class="timeline-industry">Fintech & Digital Payments</span>
+                        <p><strong>100% transaction traceability</strong> for Central Bank compliance. Built regulatory-grade data infrastructure. Co-founded and led the Data Science team.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Data Scientist</h3>
+                                <span class="timeline-company">Delivery Center</span>
+                            </div>
+                            <span class="timeline-date">May 2020 &mdash; Dec 2021</span>
+                        </div>
+                        <span class="timeline-industry">Logistics & Last-Mile Delivery</span>
+                        <p>Route optimization with <strong>13% cost reduction</strong> and <strong>22% satisfaction increase</strong>. Real-time risk prediction. Demand forecasting driving <strong>7% revenue growth</strong>.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Junior Data Scientist</h3>
+                                <span class="timeline-company">Olist</span>
+                            </div>
+                            <span class="timeline-date">Jul 2018 &mdash; Apr 2020</span>
+                        </div>
+                        <span class="timeline-industry">E-commerce & Marketplace</span>
+                        <p>ML delivery estimator with <strong>33% accuracy improvement</strong>. NLP product categorization cutting manual input by 65%. Automated onboarding reducing time by 67%.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Portfolio</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">A selection of impactful projects across industries. Click on any category to filter.</p>
+            </div>
+
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">
+                    <i class="fas fa-th"></i> All Projects
+                </button>
+                <button class="filter-btn" data-filter="genai">
+                    <i class="fas fa-robot"></i> Generative AI & LLMs
+                </button>
+                <button class="filter-btn" data-filter="ml">
+                    <i class="fas fa-brain"></i> Machine Learning
+                </button>
+                <button class="filter-btn" data-filter="nlp">
+                    <i class="fas fa-language"></i> NLP & Text Analytics
+                </button>
+                <button class="filter-btn" data-filter="scraping">
+                    <i class="fas fa-spider"></i> Web Scraping & Data Extraction
+                </button>
+                <button class="filter-btn" data-filter="engineering">
+                    <i class="fas fa-database"></i> Data Engineering
+                </button>
+                <button class="filter-btn" data-filter="automation">
+                    <i class="fas fa-cogs"></i> Process Automation
+                </button>
+                <button class="filter-btn" data-filter="optimization">
+                    <i class="fas fa-route"></i> Optimization
+                </button>
+                <button class="filter-btn" data-filter="analytics">
+                    <i class="fas fa-chart-bar"></i> Analytics & BI
+                </button>
+            </div>
+
+            <div class="projects-grid" id="projects-grid">
+
+                <!-- GENERATIVE AI & LLMs -->
+                <div class="project-card" data-category="genai">
+                    <div class="project-card-header">
+                        <div class="project-icon"><i class="fas fa-comments"></i></div>
+                        <span class="project-tag">Generative AI & LLMs</span>
+                    </div>
+                    <h3>RAG-Powered Enterprise Knowledge Assistant</h3>
+                    <p>Built an intelligent Q&A system using Retrieval-Augmented Generation (RAG) over 50,000+ internal documents. Integrated LangChain, FAISS vector store, and GPT-4/Claude APIs to provide instant, sourced answers to employee queries, reducing support ticket volume by 40%.</p>
+                    <div class="project-tech">
+                        <span>LangChain</span><span>FAISS</span><span>FastAPI</span><span>Python</span><span>Docker</span>
+                    </div>
+                    <div class="project-impact">
+                        <i class="fas fa-arrow-trend-up"></i> 40% reduction in support tickets
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="genai">
+                    <div class="project-card-header">
+                        <div class="project-icon"><i class="fas fa-wand-magic-sparkles"></i></div>
+                        <span class="project-tag">Generative AI & LLMs</span>
+                    </div>
+                    <h3>AI-Powered Insurance Policy Analyzer</h3>
+                    <p>Developed a GenAI system for Prudential that automatically analyzes insurance policies, extracts key terms, and generates risk summaries. Used LLMs with structured output parsing and prompt engineering to automate what previously required hours of manual review per policy.</p>
+                    <div class="project-tech">
+                        <span>LangChain</span><span>OpenAI</span><span>Pydantic</span><span>Streamlit</span><span>PostgreSQL</span>
+                    </div>
+                    <div class="project-impact">
+                        <i class="fas fa-arrow-trend-up"></i> 85% faster policy analysis
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="genai">
+                    <div class="project-card-header">
+                        <div class="project-icon"><i class="fas fa-users-gear"></i></div>
+                        <span class="project-tag">Generative AI & LLMs</span>
+                    </div>
+                    <h3>Multi-Agent AI Workflow for Market Research</h3>
+                    <p>Designed a multi-agent system using CrewAI and LangGraph where specialized AI agents collaborate to perform market research: one scrapes data, another analyzes competitors, and a third generates executive reports. Reduced research cycle from 2 weeks to 2 days.</p>
+                    <div class="project-tech">
+                        <span>CrewAI</span><span>LangGraph</span><span>Python</span><span>Qdrant</span><span>Gradio</span>
+                    </div>
+                    <div class="project-impact">
+                        <i class="fas fa-arrow-trend-up"></i> 85% faster research cycle
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="genai">
+                    <div class="project-card-header">
+                        <div class="project-icon"><i class="fas fa-microchip"></i></div>
+                        <span class="project-tag">Generative AI & LLMs</span>
+                    </div>
+                    <h3>Custom LLM Fine-Tuning for Financial Compliance</h3>
+                    <p>Fine-tuned open-source LLMs (LLaMA, Mistral) on financial regulation datasets for a fintech client. The specialized model automatically classifies transactions, flags compliance issues, and generates audit-ready explanations, achieving 96% accuracy on regulatory queries.</p>
+                    <div class="project-tech">
+                        <span>Hugging Face</span><span>LoRA</span><span>PyTorch</span><span>AWS SageMaker</span><span>MLflow</span>
+                    </div>
+                    <div class="project-impact">
+                        <i class="fas fa-arrow-trend-up"></i> 96% regulatory query accuracy
+                    </div>
+                </div>
+
+                <!-- MACHINE LEARNING -->
+                <div class="project-card" data-category="ml">
+                    <div class="project-card-header">
+                        <div class="project-icon"><i class="fas fa-truck-fast"></i></div>
+                        <span class="project-tag">Machine Learning</span>
+                    </div>
+                    <h3>ML-Based Delivery Time Estimator</h3>
+                    <p>Developed an ensemble ML model (XGBoost + LightGBM) at Olist that predicted delivery times with 33% more accuracy than the previous rule-based system. Integrated geospatial features, carrier performance data, and seasonal patterns. Reduced customer complaints by 19%.</p>
+                    <div class="project-tech">
+                        <span>XGBoost</span><span>LightGBM</span><span>Scikit-learn</span><span>Flask</span><span>Docker</span>
+                    </div>
+                    <div class="project-impact">
+                        <i class="fas fa-arrow-trend-up"></i> 33% accuracy improvement, -19% complaints
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="ml">
+                    <div class="project-card-header">
+                        <div class="project-icon"><i class="fas fa-triangle-exclamation"></i></div>
+                        <span class="project-tag">Machine Learning</span>
+                    </div>
+                    <h3>Real-Time Delivery Risk Prediction System</h3>
+                    <p>Built a real-time risk scoring engine at Delivery Center that monitors active deliveries and predicts failure probability. The system triggers proactive interventions (driver reassignment, customer notifications) when risk thresholds are exceeded, preventing delivery failures before they happen.</p>
+                    <div class="project-tech">
+                        <span>Python</span><span>Scikit-learn</span><span>FastAPI</span><span>Redis</span><span>PostgreSQL</span>
+                    </div>
+                    <div class="project-impact">
+                        <i class="fas fa-arrow-trend-up"></i> Proactive failure prevention
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="ml">
+                    <div class="project-card-header">
+                        <div class="project-icon"><i class="fas fa-chart-area"></i></div>
+                        <span class="project-tag">Machine Learning</span>
+                    </div>
+                    <h3>Time-Series Demand Forecasting & Pricing Engine</h3>
+                    <p>Created a demand forecasting system combining ARIMA, Prophet, and gradient boosting models at Delivery Center. Paired with a margin-aware optimization layer that dynamically adjusts pricing based on demand, capacity, and cost signals, driving 7% revenue growth.</p>
+                    <div class="project-tech">
+                        <span>Prophet</span><span>XGBoost</span><span>Optuna</span><span>Airflow</span><span>Databricks</span>
+                    </div>
+                    <div class="project-impact">
+                        <i class="fas fa-arrow-trend-up"></i> 7% revenue growth
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="ml">
+                    <div class="project-card-header">
+                        <div class="project-icon"><i class="fas fa-user-slash"></i></div>
+                        <span class="project-tag">Machine Learning</span>
+                    </div>
+                    <h3>Customer Churn Prediction & Retention System</h3>
+                    <p>Developed a churn prediction model for a retail client that identifies at-risk customers 30 days before they churn. Combined behavioral features, RFM analysis, and survival models to generate risk scores and personalized retention strategies, reducing churn by 18%.</p>
+                    <div class="project-tech">
+                        <span>LightGBM</span><span>Scikit-learn</span><span>PySpark</span><span>Airflow</span><span>Streamlit</span>
+                    </div>
+                    <div class="project-impact">
+                        <i class="fas fa-arrow-trend-up"></i> 18% churn reduction
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="ml">
+                    <div class="project-card-header">
+                        <div class="project-icon"><i class="fas fa-dna"></i></div>
+                        <span class="project-tag">Machine Learning</span>
+                    </div>
+                    <h3>Genetic Programming for Cancer Prediction</h3>
+                    <p>Capstone research project at UFPR developing a novel genetic programming-based clustering algorithm for gene expression analysis. The algorithm discovers patterns in high-dimensional biological data to assist in cancer type classification and prediction.</p>
+                    <div class="project-tech">
+                        <span>Python</span><span>Evolutionary Algorithms</span><span>NumPy</span><span>Scikit-learn</span>
+                    </div>
+                    <div class="project-impact">
+                        <i class="fas fa-arrow-trend-up"></i> Novel research contribution
+                    </div>
+                </div>
+
+                <!-- NLP & TEXT ANALYTICS -->
+                <div class="project-card" data-category="nlp">
+                    <div class="project-card-header">
+                        <div class="project-icon"><i class="fas fa-tags"></i></div>
+                        <span class="project-tag">NLP & Text Analytics</span>
+                    </div>
+                    <h3>NLP Product Categorization Engine</h3>
+                    <p>Built an NLP-based automatic product categorization system at Olist that analyzes product titles, descriptions, and attributes to classify items into the correct taxonomy. Reduced manual input by 65% and improved catalog quality, directly impacting customer satisfaction.</p>
+                    <div class="project-tech">
+                        <span>spaCy</span><span>TF-IDF</span><span>Scikit-learn</span><span>FastAPI</span><span>PostgreSQL</span>
+                    </div>
+                    <div class="project-impact">
+                        <i class="fas fa-arrow-trend-up"></i> 65% reduction in manual classification
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="nlp">
+                    <div class="project-card-header">
+                        <div class="project-icon"><i class="fas fa-face-smile"></i></div>
+                        <span class="project-tag">NLP & Text Analytics</span>
+                    </div>
+                    <h3>Customer Review Sentiment Analysis Pipeline</h3>
+                    <p>Developed an end-to-end sentiment analysis pipeline that processes thousands of customer reviews daily, extracting sentiment, key topics, and actionable insights. Used transformer-based models (BERT) fine-tuned on domain-specific data to achieve 92% accuracy on Portuguese text.</p>
+                    <div class="project-tech">
+                        <span>Hugging Face</span><span>BERT</span><span>PyTorch</span><span>Airflow</span><span>Streamlit</span>
+                    </div>
+                    <div class="project-impact">
+                        <i class="fas fa-arrow-trend-up"></i> 92% sentiment accuracy
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="nlp">
+                    <div class="project-card-header">
+                        <div class="project-icon"><i class="fas fa-file-contract"></i></div>
+                        <span class="project-tag">NLP & Text Analytics</span>
+                    </div>
+                    <h3>Intelligent Document Processing (IDP) System</h3>
+                    <p>Built an IDP system that extracts structured data from unstructured documents (invoices, contracts, reports) using OCR + NLP + LLMs. The system handles multiple document formats, validates extracted fields, and integrates with client ERP systems via API.</p>
+                    <div class="project-tech">
+                        <span>Tesseract</span><span>LangChain</span><span>spaCy</span><span>FastAPI</span><span>Docker</span>
+                    </div>
+                    <div class="project-impact">
+                        <i class="fas fa-arrow-trend-up"></i> 90% automation rate
+                    </div>
+                </div>
+
+                <!-- WEB SCRAPING & DATA EXTRACTION -->
+                <div class="project-card" data-category="scraping">
+                    <div class="project-card-header">
+                        <div class="project-icon"><i class="fas fa-magnifying-glass-chart"></i></div>
+                        <span class="project-tag">Web Scraping & Data Extraction</span>
+                    </div>
+                    <h3>LLM-Powered Intelligent Web Scraper</h3>
+                    <p>Developed an adaptive web scraping system that uses LLMs to understand page structure and extract data without brittle CSS selectors. The AI agent navigates dynamic pages, handles pagination, CAPTCHAs, and anti-bot measures, and outputs clean structured data in any schema.</p>
+                    <div class="project-tech">
+                        <span>LangChain</span><span>Playwright</span><span>OpenAI</span><span>Python</span><span>MongoDB</span>
+                    </div>
+                    <div class="project-impact">
+                        <i class="fas fa-arrow-trend-up"></i> 95% extraction accuracy on dynamic sites
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="scraping">
+                    <div class="project-card-header">
+                        <div class="project-icon"><i class="fas fa-store"></i></div>
+                        <span class="project-tag">Web Scraping & Data Extraction</span>
+                    </div>
+                    <h3>E-commerce Competitive Price Monitor</h3>
+                    <p>Built a scalable price monitoring system that scrapes 100,000+ products daily across major e-commerce platforms. Features include price change alerts, historical price tracking, competitor analysis dashboards, and automated repricing recommendations based on market positioning.</p>
+                    <div class="project-tech">
+                        <span>Scrapy</span><span>Selenium</span><span>PostgreSQL</span><span>Airflow</span><span>Streamlit</span>
+                    </div>
+                    <div class="project-impact">
+                        <i class="fas fa-arrow-trend-up"></i> 100K+ products monitored daily
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="scraping">
+                    <div class="project-card-header">
+                        <div class="project-icon"><i class="fas fa-building"></i></div>
+                        <span class="project-tag">Web Scraping & Data Extraction</span>
+                    </div>
+                    <h3>Real Estate Market Intelligence Platform</h3>
+                    <p>Created an automated data collection platform that scrapes property listings, rental prices, and market trends from multiple real estate portals. Includes geocoding, deduplication with fuzzy matching, and a dashboard for market analysis and investment decision support.</p>
+                    <div class="project-tech">
+                        <span>Scrapy</span><span>BeautifulSoup</span><span>PostgreSQL</span><span>Plotly</span><span>Docker</span>
+                    </div>
+                    <div class="project-impact">
+                        <i class="fas fa-arrow-trend-up"></i> 500K+ listings tracked
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="scraping">
+                    <div class="project-card-header">
+                        <div class="project-icon"><i class="fas fa-users"></i></div>
+                        <span class="project-tag">Web Scraping & Data Extraction</span>
+                    </div>
+                    <h3>B2B Lead Generation & Enrichment Engine</h3>
+                    <p>Built a lead generation system that scrapes business directories, LinkedIn profiles, and company websites to build enriched prospect databases. Uses NLP to classify industry, company size, and technologies used, enabling highly targeted outreach for sales teams.</p>
+                    <div class="project-tech">
+                        <span>Playwright</span><span>spaCy</span><span>Python</span><span>MongoDB</span><span>FastAPI</span>
+                    </div>
+                    <div class="project-impact">
+                        <i class="fas fa-arrow-trend-up"></i> 10K+ enriched leads/month
+                    </div>
+                </div>
+
+                <!-- DATA ENGINEERING -->
+                <div class="project-card" data-category="engineering">
+                    <div class="project-card-header">
+                        <div class="project-icon"><i class="fas fa-bolt"></i></div>
+                        <span class="project-tag">Data Engineering</span>
+                    </div>
+                    <h3>Big Data Pipeline Optimization (6,000x Speedup)</h3>
+                    <p>Re-architected and optimized data pipelines at ALLOS using PySpark, SQL, and ML techniques. Transformed batch processing jobs that took hours into near-real-time pipelines, achieving a 6,000x performance improvement. Enabled data freshness for executive dashboards.</p>
+                    <div class="project-tech">
+                        <span>PySpark</span><span>Databricks</span><span>SQL</span><span>Delta Lake</span><span>Airflow</span>
+                    </div>
+                    <div class="project-impact">
+                        <i class="fas fa-arrow-trend-up"></i> 6,000x processing speedup
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="engineering">
+                    <div class="project-card-header">
+                        <div class="project-icon"><i class="fas fa-shield-halved"></i></div>
+                        <span class="project-tag">Data Engineering</span>
+                    </div>
+                    <h3>Regulatory-Grade Data Infrastructure (Fintech)</h3>
+                    <p>Designed and implemented the complete data infrastructure at Swap covering ingestion, transformation, storage, and governance. Built to Central Bank of Brazil standards with 100% transaction traceability, audit trails, and data quality monitoring &mdash; critical for Payment Institution certification.</p>
+                    <div class="project-tech">
+                        <span>Python</span><span>Airflow</span><span>PostgreSQL</span><span>Docker</span><span>AWS</span>
+                    </div>
+                    <div class="project-impact">
+                        <i class="fas fa-arrow-trend-up"></i> 100% compliance achieved
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="engineering">
+                    <div class="project-card-header">
+                        <div class="project-icon"><i class="fas fa-arrow-right-arrow-left"></i></div>
+                        <span class="project-tag">Data Engineering</span>
+                    </div>
+                    <h3>Real-Time ETL Pipeline with Event Streaming</h3>
+                    <p>Built a real-time data ingestion and transformation pipeline that processes millions of events daily from multiple sources. Uses event-driven architecture with message queues for reliable delivery, schema evolution support, and automated data quality checks.</p>
+                    <div class="project-tech">
+                        <span>Apache Kafka</span><span>PySpark</span><span>Airflow</span><span>PostgreSQL</span><span>Docker</span>
+                    </div>
+                    <div class="project-impact">
+                        <i class="fas fa-arrow-trend-up"></i> Millions of events/day processed
+                    </div>
+                </div>
+
+                <!-- PROCESS AUTOMATION -->
+                <div class="project-card" data-category="automation">
+                    <div class="project-card-header">
+                        <div class="project-icon"><i class="fas fa-user-check"></i></div>
+                        <span class="project-tag">Process Automation</span>
+                    </div>
+                    <h3>Automated Customer Onboarding System</h3>
+                    <p>Designed and implemented an intelligent onboarding automation system at Olist that streamlined the seller registration process. Automated document validation, data verification, and account setup workflows, reducing completion time by 67% (from 3 weeks to 1 week).</p>
+                    <div class="project-tech">
+                        <span>Python</span><span>Airflow</span><span>PostgreSQL</span><span>REST APIs</span><span>Docker</span>
+                    </div>
+                    <div class="project-impact">
+                        <i class="fas fa-arrow-trend-up"></i> 67% faster onboarding
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="automation">
+                    <div class="project-card-header">
+                        <div class="project-icon"><i class="fas fa-file-invoice-dollar"></i></div>
+                        <span class="project-tag">Process Automation</span>
+                    </div>
+                    <h3>Financial Report Generation Automation</h3>
+                    <p>Built an end-to-end automated reporting system that pulls data from multiple sources, runs validation checks, applies business rules, and generates formatted financial reports. Includes anomaly detection that flags unusual values for human review before distribution.</p>
+                    <div class="project-tech">
+                        <span>Python</span><span>Pandas</span><span>Airflow</span><span>Jinja2</span><span>Slack API</span>
+                    </div>
+                    <div class="project-impact">
+                        <i class="fas fa-arrow-trend-up"></i> 90% reduction in manual reporting
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="automation">
+                    <div class="project-card-header">
+                        <div class="project-icon"><i class="fas fa-money-bill-transfer"></i></div>
+                        <span class="project-tag">Process Automation</span>
+                    </div>
+                    <h3>Transaction Reconciliation Automation</h3>
+                    <p>Developed an automated reconciliation system at Swap that matches financial transactions across multiple payment processors, banks, and internal systems. Handles edge cases like partial payments, refunds, and chargebacks with 100% traceability for audit compliance.</p>
+                    <div class="project-tech">
+                        <span>Python</span><span>PySpark</span><span>PostgreSQL</span><span>Airflow</span><span>FastAPI</span>
+                    </div>
+                    <div class="project-impact">
+                        <i class="fas fa-arrow-trend-up"></i> 100% transaction traceability
+                    </div>
+                </div>
+
+                <!-- OPTIMIZATION -->
+                <div class="project-card" data-category="optimization">
+                    <div class="project-card-header">
+                        <div class="project-icon"><i class="fas fa-route"></i></div>
+                        <span class="project-tag">Optimization</span>
+                    </div>
+                    <h3>Last-Mile Delivery Route Optimization</h3>
+                    <p>Built an intelligent route optimization engine at Delivery Center combining ML predictions with bio-inspired algorithms (genetic algorithms, ant colony optimization). The system considers real-time traffic, driver capacity, delivery windows, and cost constraints to generate optimal routes.</p>
+                    <div class="project-tech">
+                        <span>Python</span><span>OR-Tools</span><span>Genetic Algorithms</span><span>FastAPI</span><span>Redis</span>
+                    </div>
+                    <div class="project-impact">
+                        <i class="fas fa-arrow-trend-up"></i> 13% cost reduction, +22% satisfaction
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="optimization">
+                    <div class="project-card-header">
+                        <div class="project-icon"><i class="fas fa-search-dollar"></i></div>
+                        <span class="project-tag">Optimization</span>
+                    </div>
+                    <h3>Dynamic Pricing & Margin Optimization</h3>
+                    <p>Created a margin-aware pricing optimization system that balances revenue maximization with competitive positioning. Uses demand elasticity models, competitor pricing signals, and cost structures to recommend optimal price points in real-time, contributing to 7% revenue growth.</p>
+                    <div class="project-tech">
+                        <span>Python</span><span>Optuna</span><span>XGBoost</span><span>FastAPI</span><span>Databricks</span>
+                    </div>
+                    <div class="project-impact">
+                        <i class="fas fa-arrow-trend-up"></i> 7% revenue increase
+                    </div>
+                </div>
+
+                <!-- ANALYTICS & BI -->
+                <div class="project-card" data-category="analytics">
+                    <div class="project-card-header">
+                        <div class="project-icon"><i class="fas fa-chart-pie"></i></div>
+                        <span class="project-tag">Analytics & BI</span>
+                    </div>
+                    <h3>Executive KPI Dashboard Suite</h3>
+                    <p>Designed and implemented a comprehensive KPI dashboard suite in Databricks at ALLOS covering sales performance, customer engagement, and operational efficiency. Features drill-down capabilities, automated alerts, and natural language summaries for C-level stakeholders.</p>
+                    <div class="project-tech">
+                        <span>Databricks</span><span>SQL</span><span>Plotly</span><span>Python</span><span>PySpark</span>
+                    </div>
+                    <div class="project-impact">
+                        <i class="fas fa-arrow-trend-up"></i> Data-driven executive decisions
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="analytics">
+                    <div class="project-card-header">
+                        <div class="project-icon"><i class="fas fa-link"></i></div>
+                        <span class="project-tag">Analytics & BI</span>
+                    </div>
+                    <h3>Fuzzy Matching for Loyalty Program Mapping</h3>
+                    <p>Built a fuzzy matching algorithm at ALLOS that maps stores to benefits in a loyalty program with 98% accuracy. Handles name variations, abbreviations, and typos across thousands of store entries, enabling automated benefit assignment that previously required manual curation.</p>
+                    <div class="project-tech">
+                        <span>Python</span><span>FuzzyWuzzy</span><span>PySpark</span><span>Databricks</span><span>SQL</span>
+                    </div>
+                    <div class="project-impact">
+                        <i class="fas fa-arrow-trend-up"></i> 98% matching accuracy
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="analytics">
+                    <div class="project-card-header">
+                        <div class="project-icon"><i class="fas fa-database"></i></div>
+                        <span class="project-tag">Analytics & BI</span>
+                    </div>
+                    <h3>Data Lake Architecture & Governance Framework</h3>
+                    <p>Architected and implemented a data lake at Prudential do Brasil with proper governance layers: data cataloging, quality monitoring, access controls, and lineage tracking. Enabled the organization to transition from siloed spreadsheets to a unified, trusted data platform.</p>
+                    <div class="project-tech">
+                        <span>AWS S3</span><span>Glue</span><span>Athena</span><span>Python</span><span>Airflow</span>
+                    </div>
+                    <div class="project-impact">
+                        <i class="fas fa-arrow-trend-up"></i> Unified data platform established
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Tech Stack</span>
+                <h2 class="section-title">Skills & Technologies</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <i class="fas fa-brain"></i>
+                        <h3>Machine Learning & AI</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span>Supervised Learning</span>
+                        <span>Unsupervised Learning</span>
+                        <span>Deep Learning</span>
+                        <span>NLP</span>
+                        <span>Generative AI</span>
+                        <span>LLMs / RAG</span>
+                        <span>Fine-Tuning</span>
+                        <span>Time Series</span>
+                        <span>Evolutionary Computation</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <i class="fas fa-toolbox"></i>
+                        <h3>Frameworks & Libraries</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span>TensorFlow</span>
+                        <span>PyTorch</span>
+                        <span>Scikit-learn</span>
+                        <span>XGBoost</span>
+                        <span>LightGBM</span>
+                        <span>Hugging Face</span>
+                        <span>LangChain</span>
+                        <span>LangGraph</span>
+                        <span>CrewAI</span>
+                        <span>LlamaIndex</span>
+                        <span>Optuna</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Programming & Data</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span>Python</span>
+                        <span>SQL</span>
+                        <span>PySpark</span>
+                        <span>Pandas</span>
+                        <span>NumPy</span>
+                        <span>Databricks</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <i class="fas fa-database"></i>
+                        <h3>Data Engineering</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span>ETL/ELT Pipelines</span>
+                        <span>Apache Airflow</span>
+                        <span>Apache Spark</span>
+                        <span>PostgreSQL</span>
+                        <span>MySQL</span>
+                        <span>MongoDB</span>
+                        <span>FAISS</span>
+                        <span>Pinecone</span>
+                        <span>Chroma</span>
+                        <span>Qdrant</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <i class="fas fa-cloud"></i>
+                        <h3>Cloud & MLOps</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span>AWS</span>
+                        <span>GCP</span>
+                        <span>SageMaker</span>
+                        <span>Kubeflow</span>
+                        <span>MLflow</span>
+                        <span>FastAPI</span>
+                        <span>Flask</span>
+                        <span>Docker</span>
+                        <span>Streamlit</span>
+                        <span>Gradio</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <i class="fas fa-chart-bar"></i>
+                        <h3>Visualization</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span>Matplotlib</span>
+                        <span>Seaborn</span>
+                        <span>Plotly</span>
+                        <span>KPI Dashboards</span>
+                        <span>Data Storytelling</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section education" id="education">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Education</span>
+                <h2 class="section-title">Academic Background</h2>
+            </div>
+            <div class="education-grid">
+                <div class="education-card">
+                    <div class="education-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h3>B.Sc. in Computer Science</h3>
+                    <span class="education-school">Federal University of Parana (UFPR), Brazil</span>
+                    <span class="education-year">2017</span>
+                    <p><strong>Capstone Project:</strong> Genetic programming-based clustering algorithm for gene expression analysis and cancer prediction.</p>
+                    <p><strong>Research:</strong> Intelligent urban traffic monitoring systems using bio-inspired algorithms for vehicular network optimization (VANETs).</p>
+                </div>
+                <div class="education-card">
+                    <div class="education-icon"><i class="fas fa-book"></i></div>
+                    <h3>Published Author</h3>
+                    <span class="education-school">"Python para Analise de Dados &mdash; Do Zero ao Insight"</span>
+                    <span class="education-year">2024</span>
+                    <p>Authored a comprehensive Python for Data Analysis book used as primary course material. Covers everything from Python fundamentals to real-world data analysis projects.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get in Touch</span>
+                <h2 class="section-title">Let's Build Something <br>Amazing Together</h2>
+                <p class="section-subtitle">I'm available for freelance projects, consulting, and long-term collaborations. Whether you need an AI solution, data pipeline, or ML model &mdash; let's talk.</p>
+            </div>
+            <div class="contact-grid">
+                <a href="mailto:horning.walter@gmail.com" class="contact-card">
+                    <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                    <h3>Email</h3>
+                    <p>horning.walter@gmail.com</p>
+                </a>
+                <a href="https://www.linkedin.com/in/walter-horning-junior" target="_blank" rel="noopener" class="contact-card">
+                    <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+                    <h3>LinkedIn</h3>
+                    <p>walter-horning-junior</p>
+                </a>
+                <a href="https://wa.me/5541998497081" target="_blank" rel="noopener" class="contact-card">
+                    <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+                    <h3>WhatsApp</h3>
+                    <p>+55 41 9 9849 7081</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>WH<span class="logo-slash">/</span><span class="logo-bracket">&gt;</span>
+                </div>
+                <p>&copy; 2025 Walter Horning Jr. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="https://www.linkedin.com/in/walter-horning-junior" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:horning.walter@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <a href="https://wa.me/5541998497081" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
