@@ -461,44 +461,44 @@ img {
 }
 
 .card-1 {
-    top: 4%;
-    right: -12%;
+    top: 2%;
+    right: -22%;
     animation-delay: 0s;
 }
 
 .card-2 {
-    top: 20%;
-    left: -14%;
+    top: 5%;
+    left: -28%;
     animation-delay: 1s;
 }
 
 .card-3 {
     bottom: 6%;
-    right: -6%;
+    right: -22%;
     animation-delay: 2s;
 }
 
 .card-4 {
-    top: 44%;
-    right: -16%;
+    top: -10%;
+    left: 28%;
     animation-delay: 3s;
 }
 
 .card-5 {
-    bottom: 26%;
-    left: -10%;
+    bottom: 6%;
+    left: -28%;
     animation-delay: 4s;
 }
 
 .card-6 {
-    top: 62%;
-    left: -14%;
+    top: 44%;
+    right: -38%;
     animation-delay: 5s;
 }
 
 .card-7 {
-    bottom: -2%;
-    left: 18%;
+    bottom: -12%;
+    left: 30%;
     animation-delay: 6s;
 }
 
