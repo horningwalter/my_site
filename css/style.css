@@ -968,6 +968,47 @@ img { max-width: 100%; display: block; }
 
 .project-impact i { font-size: 0.82rem; }
 
+.projects-footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 28px;
+}
+
+.btn-show-all {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 11px 22px;
+    font-family: var(--font-main);
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--accent-light);
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 100px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.btn-show-all:hover {
+    color: white;
+    background: var(--gradient-primary);
+    border-color: transparent;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 24px rgba(99, 102, 241, 0.3);
+}
+
+.btn-show-all i {
+    font-size: 0.72rem;
+    transition: transform 0.3s ease;
+}
+
+.btn-show-all[aria-expanded="true"] i {
+    transform: rotate(180deg);
+}
+
+.btn-show-all[hidden] { display: none; }
+
 /* ===== SKILLS ===== */
 .skills-grid {
     display: grid;

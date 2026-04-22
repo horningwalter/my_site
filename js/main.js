@@ -126,24 +126,74 @@ if (statsSection) {
 // ===== PROJECT FILTERS =====
 const filterButtons = document.querySelectorAll('.filter-btn');
 const projectCards = document.querySelectorAll('.project-card');
+const showAllBtn = document.getElementById('show-all-projects');
+const showAllBtnLabel = showAllBtn ? showAllBtn.querySelector('.btn-show-all-label') : null;
+
+const INITIAL_VISIBLE = 6;
+let currentFilter = 'all';
+let isExpanded = false;
+
+function applyFilter() {
+    let matchedCount = 0;
+
+    projectCards.forEach(card => {
+        const matchesFilter = currentFilter === 'all' || card.getAttribute('data-category') === currentFilter;
+
+        if (!matchesFilter) {
+            card.classList.add('hidden');
+            return;
+        }
+
+        matchedCount++;
+        const overLimit = currentFilter === 'all' && !isExpanded && matchedCount > INITIAL_VISIBLE;
+
+        if (overLimit) {
+            card.classList.add('hidden');
+        } else {
+            card.classList.remove('hidden');
+            card.style.animation = 'fadeInUp 0.4s ease forwards';
+        }
+    });
+
+    if (!showAllBtn) return;
+
+    const shouldShowButton = currentFilter === 'all' && matchedCount > INITIAL_VISIBLE;
+
+    if (shouldShowButton) {
+        showAllBtn.hidden = false;
+        showAllBtn.setAttribute('aria-expanded', isExpanded ? 'true' : 'false');
+        if (showAllBtnLabel) {
+            showAllBtnLabel.textContent = isExpanded
+                ? 'Show fewer projects'
+                : `Show all ${matchedCount} projects`;
+        }
+    } else {
+        showAllBtn.hidden = true;
+    }
+}
 
 filterButtons.forEach(btn => {
     btn.addEventListener('click', () => {
         filterButtons.forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
-
-        const filter = btn.getAttribute('data-filter');
-
-        projectCards.forEach(card => {
-            if (filter === 'all' || card.getAttribute('data-category') === filter) {
-                card.classList.remove('hidden');
-                card.style.animation = 'fadeInUp 0.4s ease forwards';
-            } else {
-                card.classList.add('hidden');
-            }
-        });
+        currentFilter = btn.getAttribute('data-filter');
+        isExpanded = false;
+        applyFilter();
     });
 });
+
+if (showAllBtn) {
+    showAllBtn.addEventListener('click', () => {
+        isExpanded = !isExpanded;
+        applyFilter();
+        if (!isExpanded) {
+            const projectsSection = document.getElementById('projects');
+            if (projectsSection) projectsSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+}
+
+applyFilter();
 
 // ===== SMOOTH SCROLL FOR NAVIGATION =====
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
