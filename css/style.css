@@ -441,34 +441,6 @@ img {
     to { transform: rotate(360deg); }
 }
 
-.floating-card {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding: 10px 18px;
-    background: var(--bg-card);
-    border: 1px solid var(--border-color);
-    border-radius: var(--radius-md);
-    font-size: 0.85rem;
-    font-weight: 600;
-    white-space: nowrap;
-    z-index: 3;
-    box-shadow: var(--shadow-md);
-    transform: translate(-50%, -50%);
-    animation: float 6s ease-in-out infinite;
-}
-
-.floating-card i {
-    color: var(--accent);
-    font-size: 1rem;
-}
-
-/* Three orbiting cards: Data Science on top, AI/ML at 3h, GenAI at 9h (r ≈ 200px) */
-.card-1 { top: 50%;  left: 109%; animation-delay: 0s; }   /* AI/ML        (3:00) */
-.card-3 { top: 50%;  left: -9%;  animation-delay: 2s; }   /* GenAI        (9:00) */
-.card-4 { top: -9%;  left: 50%;  animation-delay: 4s; }   /* Data Science (12:00) */
-
 /* Expertise chips displayed in a horizontal strip beneath the photo */
 .expertise-chips {
     display: flex;
@@ -496,11 +468,6 @@ img {
 .expertise-chips .chip i {
     color: var(--accent);
     font-size: 0.85rem;
-}
-
-@keyframes float {
-    0%, 100% { transform: translate(-50%, -50%) translateY(0); }
-    50%      { transform: translate(-50%, -50%) translateY(-12px); }
 }
 
 .scroll-indicator {
@@ -1328,10 +1295,6 @@ img {
     .filter-btn {
         padding: 6px 12px;
         font-size: 0.78rem;
-    }
-
-    .floating-card {
-        display: none;
     }
 
     .scroll-indicator {
