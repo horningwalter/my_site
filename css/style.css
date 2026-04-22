@@ -388,8 +388,10 @@ img {
 .hero-image {
     position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 40px;
     animation: fadeInRight 0.8s ease 0.3s backwards;
 }
 
@@ -462,14 +464,39 @@ img {
     font-size: 1rem;
 }
 
-/* Cards evenly distributed around the photo (every ~51.4°, r ≈ 220px, wrapper 340×340) */
-.card-1 { top: 64%;  left: 113%; animation-delay: 0s; }   /* AI/ML              (≈3:30) */
-.card-2 { top: 64%;  left: -13%; animation-delay: 3s; }   /* Big Data           (≈8:30) */
-.card-3 { top: 108%; left: 22%;  animation-delay: 1s; }   /* GenAI              (≈6:50) */
-.card-4 { top: -15%; left: 50%;  animation-delay: 2s; }   /* Data Science       (12:00) */
-.card-5 { top: 108%; left: 78%;  animation-delay: 4s; }   /* Process Automation (≈5:10) */
-.card-6 { top: 10%;  left: 101%; animation-delay: 5s; }   /* Data Engineering   (≈1:45) */
-.card-7 { top: 10%;  left: -1%;  animation-delay: 6s; }   /* Analytics          (≈10:15) */
+/* Three orbiting cards: Data Science on top, AI/ML at 3h, GenAI at 9h (r ≈ 200px) */
+.card-1 { top: 50%;  left: 109%; animation-delay: 0s; }   /* AI/ML        (3:00) */
+.card-3 { top: 50%;  left: -9%;  animation-delay: 2s; }   /* GenAI        (9:00) */
+.card-4 { top: -9%;  left: 50%;  animation-delay: 4s; }   /* Data Science (12:00) */
+
+/* Expertise chips displayed in a horizontal strip beneath the photo */
+.expertise-chips {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    max-width: 420px;
+    margin: 0;
+}
+
+.expertise-chips .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px 14px;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 100px;
+    font-size: 0.78rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    box-shadow: var(--shadow-sm);
+}
+
+.expertise-chips .chip i {
+    color: var(--accent);
+    font-size: 0.85rem;
+}
 
 @keyframes float {
     0%, 100% { transform: translate(-50%, -50%) translateY(0); }
