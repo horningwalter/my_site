@@ -450,8 +450,10 @@ img {
     border-radius: var(--radius-md);
     font-size: 0.85rem;
     font-weight: 600;
+    white-space: nowrap;
     z-index: 3;
     box-shadow: var(--shadow-md);
+    transform: translate(-50%, -50%);
     animation: float 6s ease-in-out infinite;
 }
 
@@ -460,51 +462,18 @@ img {
     font-size: 1rem;
 }
 
-.card-1 {
-    top: 2%;
-    right: -22%;
-    animation-delay: 0s;
-}
-
-.card-2 {
-    top: 5%;
-    left: -28%;
-    animation-delay: 1s;
-}
-
-.card-3 {
-    bottom: 6%;
-    right: -22%;
-    animation-delay: 2s;
-}
-
-.card-4 {
-    top: -10%;
-    left: 28%;
-    animation-delay: 3s;
-}
-
-.card-5 {
-    bottom: 6%;
-    left: -28%;
-    animation-delay: 4s;
-}
-
-.card-6 {
-    top: 44%;
-    right: -38%;
-    animation-delay: 5s;
-}
-
-.card-7 {
-    bottom: -12%;
-    left: 30%;
-    animation-delay: 6s;
-}
+/* Cards evenly distributed around the photo (every ~51.4°, r ≈ 200px, wrapper 340×340) */
+.card-1 { top: 13%;  left: 96%;  animation-delay: 0s; }   /* AI/ML           (≈1:45) */
+.card-2 { top: 13%;  left: 4%;   animation-delay: 3s; }   /* Big Data        (≈10:15) */
+.card-3 { top: 103%; left: 76%;  animation-delay: 1s; }   /* GenAI           (≈5:10) */
+.card-4 { top: -9%;  left: 50%;  animation-delay: 2s; }   /* Data Science    (12:00) */
+.card-5 { top: 63%;  left: -7%;  animation-delay: 4s; }   /* Process Automation (≈8:30) */
+.card-6 { top: 63%;  left: 107%; animation-delay: 5s; }   /* Data Engineering   (≈3:30) */
+.card-7 { top: 103%; left: 24%;  animation-delay: 6s; }   /* Analytics       (≈6:50) */
 
 @keyframes float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-12px); }
+    0%, 100% { transform: translate(-50%, -50%) translateY(0); }
+    50%      { transform: translate(-50%, -50%) translateY(-12px); }
 }
 
 .scroll-indicator {
