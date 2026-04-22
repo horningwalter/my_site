@@ -237,11 +237,12 @@ img { max-width: 100%; display: block; }
 }
 
 /* ===== i18n: hide inactive language =====
-   Default: PT visible, EN hidden.
-   When <body> carries .lang-en: PT hidden, EN visible. */
-.lang-en { display: none !important; }
-body.lang-en .lang-pt { display: none !important; }
-body.lang-en .lang-en { display: revert !important; }
+   Default (no data-lang, or data-lang="pt"): EN hidden, PT shown.
+   data-lang="en": PT hidden, EN shown (naturally, via absence of the
+   first rule). No display: revert needed, so this is safe across
+   browsers and cache states. */
+body:not([data-lang="en"]) .lang-en { display: none !important; }
+body[data-lang="en"] .lang-pt { display: none !important; }
 
 /* ===== HERO ===== */
 .hero {

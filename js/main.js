@@ -2,25 +2,25 @@
 const LANG_STORAGE_KEY = 'lang';
 const initialLang = localStorage.getItem(LANG_STORAGE_KEY) === 'en' ? 'en' : 'pt';
 
-// Apply body class up-front to avoid a flash of the wrong language
-document.body.classList.toggle('lang-en', initialLang === 'en');
+// Apply body attribute up-front to avoid a flash of the wrong language
+document.body.dataset.lang = initialLang;
 document.documentElement.lang = initialLang === 'en' ? 'en' : 'pt-BR';
 
 const langOptions = document.querySelectorAll('.lang-option');
 
 function setLanguage(lang) {
-    const isEN = lang === 'en';
-    document.body.classList.toggle('lang-en', isEN);
-    localStorage.setItem(LANG_STORAGE_KEY, isEN ? 'en' : 'pt');
-    document.documentElement.lang = isEN ? 'en' : 'pt-BR';
+    const targetLang = lang === 'en' ? 'en' : 'pt';
+    document.body.dataset.lang = targetLang;
+    localStorage.setItem(LANG_STORAGE_KEY, targetLang);
+    document.documentElement.lang = targetLang === 'en' ? 'en' : 'pt-BR';
 
     langOptions.forEach(btn => {
-        const isActive = btn.getAttribute('data-lang') === lang;
+        const isActive = btn.getAttribute('data-lang') === targetLang;
         btn.classList.toggle('is-active', isActive);
         btn.setAttribute('aria-pressed', isActive ? 'true' : 'false');
     });
 
-    document.dispatchEvent(new CustomEvent('languagechange', { detail: { lang } }));
+    document.dispatchEvent(new CustomEvent('languagechange', { detail: { lang: targetLang } }));
 }
 
 langOptions.forEach(btn => {
