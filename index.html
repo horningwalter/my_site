@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css?v=4">
+    <link rel="stylesheet" href="css/style.css?v=5">
 </head>
 <body>
     <!-- Navigation -->
@@ -27,10 +27,10 @@
                 <li><a href="#contact" class="nav-link nav-cta"><span class="lang-pt">Vamos Conversar</span><span class="lang-en">Let's Talk</span></a></li>
             </ul>
             <div class="nav-controls">
-                <button class="lang-toggle" id="lang-toggle" type="button" aria-label="Change language">
-                    <span class="lang-pt">PT</span>
-                    <span class="lang-en">EN</span>
-                </button>
+                <div class="lang-toggle" id="lang-toggle" role="group" aria-label="Language selector">
+                    <button class="lang-option" type="button" data-lang="pt">PT</button>
+                    <button class="lang-option" type="button" data-lang="en">EN</button>
+                </div>
                 <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
                     <span></span><span></span><span></span>
                 </button>
@@ -1406,6 +1406,6 @@
         </div>
     </footer>
 
-    <script src="js/main.js?v=4"></script>
+    <script src="js/main.js?v=5"></script>
 </body>
 </html>

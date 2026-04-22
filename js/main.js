@@ -1,23 +1,37 @@
 // ===== LANGUAGE TOGGLE (PT default, EN optional) =====
-(function initLang() {
-    const savedLang = localStorage.getItem('lang');
-    if (savedLang === 'en') {
-        document.body.classList.add('lang-en');
-        document.documentElement.lang = 'en';
-    } else {
-        document.documentElement.lang = 'pt-BR';
-    }
-})();
+const LANG_STORAGE_KEY = 'lang';
+const initialLang = localStorage.getItem(LANG_STORAGE_KEY) === 'en' ? 'en' : 'pt';
 
-const langToggle = document.getElementById('lang-toggle');
-if (langToggle) {
-    langToggle.addEventListener('click', () => {
-        const isEN = document.body.classList.toggle('lang-en');
-        localStorage.setItem('lang', isEN ? 'en' : 'pt');
-        document.documentElement.lang = isEN ? 'en' : 'pt-BR';
-        document.dispatchEvent(new CustomEvent('languagechange', { detail: { lang: isEN ? 'en' : 'pt' } }));
+// Apply body class up-front to avoid a flash of the wrong language
+document.body.classList.toggle('lang-en', initialLang === 'en');
+document.documentElement.lang = initialLang === 'en' ? 'en' : 'pt-BR';
+
+const langOptions = document.querySelectorAll('.lang-option');
+
+function setLanguage(lang) {
+    const isEN = lang === 'en';
+    document.body.classList.toggle('lang-en', isEN);
+    localStorage.setItem(LANG_STORAGE_KEY, isEN ? 'en' : 'pt');
+    document.documentElement.lang = isEN ? 'en' : 'pt-BR';
+
+    langOptions.forEach(btn => {
+        const isActive = btn.getAttribute('data-lang') === lang;
+        btn.classList.toggle('is-active', isActive);
+        btn.setAttribute('aria-pressed', isActive ? 'true' : 'false');
     });
+
+    document.dispatchEvent(new CustomEvent('languagechange', { detail: { lang } }));
 }
+
+langOptions.forEach(btn => {
+    btn.addEventListener('click', () => {
+        const lang = btn.getAttribute('data-lang');
+        if (lang) setLanguage(lang);
+    });
+});
+
+// Mark the active button on load
+setLanguage(initialLang);
 
 // ===== TYPED ROLES ANIMATION =====
 const roles = [
