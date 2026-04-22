@@ -222,9 +222,12 @@ img { max-width: 100%; display: block; }
     border-color: var(--accent);
 }
 
-/* ===== i18n: hide inactive language ===== */
-body:not(.lang-en) .lang-en { display: none !important; }
+/* ===== i18n: hide inactive language =====
+   Default: PT visible, EN hidden.
+   When <body> carries .lang-en: PT hidden, EN visible. */
+.lang-en { display: none !important; }
 body.lang-en .lang-pt { display: none !important; }
+body.lang-en .lang-en { display: revert !important; }
 
 /* ===== HERO ===== */
 .hero {
