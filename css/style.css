@@ -461,21 +461,45 @@ img {
 }
 
 .card-1 {
-    top: 10%;
-    right: -10%;
+    top: 4%;
+    right: -12%;
     animation-delay: 0s;
 }
 
 .card-2 {
-    bottom: 20%;
-    left: -5%;
-    animation-delay: 2s;
+    top: 20%;
+    left: -14%;
+    animation-delay: 1s;
 }
 
 .card-3 {
-    bottom: 5%;
-    right: 5%;
+    bottom: 6%;
+    right: -6%;
+    animation-delay: 2s;
+}
+
+.card-4 {
+    top: 44%;
+    right: -16%;
+    animation-delay: 3s;
+}
+
+.card-5 {
+    bottom: 26%;
+    left: -10%;
     animation-delay: 4s;
+}
+
+.card-6 {
+    top: 62%;
+    left: -14%;
+    animation-delay: 5s;
+}
+
+.card-7 {
+    bottom: -2%;
+    left: 18%;
+    animation-delay: 6s;
 }
 
 @keyframes float {
@@ -755,6 +779,37 @@ img {
 
 .timeline-content strong {
     color: var(--text-primary);
+}
+
+.timeline-clients {
+    list-style: none;
+    padding: 0;
+    margin: 12px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.timeline-clients li {
+    position: relative;
+    padding: 10px 14px 10px 28px;
+    background: rgba(99, 102, 241, 0.06);
+    border-left: 2px solid var(--accent);
+    border-radius: var(--radius-sm);
+    font-size: 0.88rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.timeline-clients li::before {
+    content: "\f0a9";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 10px;
+    top: 11px;
+    font-size: 0.75rem;
+    color: var(--accent);
 }
 
 /* ===== PROJECTS ===== */

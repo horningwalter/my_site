@@ -1,10 +1,7 @@
 // ===== TYPED ROLES ANIMATION =====
 const roles = [
     'Data Scientist',
-    'AI/ML Engineer',
-    'GenAI Specialist',
-    'NLP Engineer',
-    'Data Engineer',
+    'AI & ML Engineer',
     'Python Developer'
 ];
 

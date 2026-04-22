@@ -1,0 +1,16 @@
+# Claude Code local config
+.claude/
+
+# Internal docs (not part of the deployed site)
+doc/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# Logs
+*.log
