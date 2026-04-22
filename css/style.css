@@ -1241,13 +1241,13 @@ img {
         grid-template-columns: repeat(4, 1fr);
     }
 
-    .hero-image {
-        order: -1;
+    .image-wrapper {
+        width: 240px;
+        height: 240px;
     }
 
-    .image-wrapper {
-        width: 260px;
-        height: 260px;
+    .expertise-block {
+        gap: 8px;
     }
 
     .about-content {
@@ -1304,6 +1304,20 @@ img {
     .metrics-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 24px;
+    }
+
+    .expertise-chips {
+        gap: 8px;
+    }
+
+    .expertise-chips .chip {
+        padding: 7px 13px;
+        font-size: 0.78rem;
+        gap: 6px;
+    }
+
+    .expertise-chips .chip i {
+        font-size: 0.82rem;
     }
 
     .projects-grid {
@@ -1364,5 +1378,15 @@ img {
     .btn {
         padding: 12px 20px;
         font-size: 0.88rem;
+    }
+
+    .image-wrapper {
+        width: 210px;
+        height: 210px;
+    }
+
+    .expertise-chips .chip {
+        padding: 6px 11px;
+        font-size: 0.74rem;
     }
 }
