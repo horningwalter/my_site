@@ -1,3 +1,24 @@
+// ===== LANGUAGE TOGGLE (PT default, EN optional) =====
+(function initLang() {
+    const savedLang = localStorage.getItem('lang');
+    if (savedLang === 'en') {
+        document.body.classList.add('lang-en');
+        document.documentElement.lang = 'en';
+    } else {
+        document.documentElement.lang = 'pt-BR';
+    }
+})();
+
+const langToggle = document.getElementById('lang-toggle');
+if (langToggle) {
+    langToggle.addEventListener('click', () => {
+        const isEN = document.body.classList.toggle('lang-en');
+        localStorage.setItem('lang', isEN ? 'en' : 'pt');
+        document.documentElement.lang = isEN ? 'en' : 'pt-BR';
+        document.dispatchEvent(new CustomEvent('languagechange', { detail: { lang: isEN ? 'en' : 'pt' } }));
+    });
+}
+
 // ===== TYPED ROLES ANIMATION =====
 const roles = [
     'Data Scientist',
@@ -163,9 +184,14 @@ function applyFilter() {
         showAllBtn.hidden = false;
         showAllBtn.setAttribute('aria-expanded', isExpanded ? 'true' : 'false');
         if (showAllBtnLabel) {
-            showAllBtnLabel.textContent = isExpanded
-                ? 'Show fewer projects'
-                : `Show all ${matchedCount} projects`;
+            const isEN = document.body.classList.contains('lang-en');
+            if (isExpanded) {
+                showAllBtnLabel.textContent = isEN ? 'Show fewer projects' : 'Ver menos projetos';
+            } else {
+                showAllBtnLabel.textContent = isEN
+                    ? `Show all ${matchedCount} projects`
+                    : `Ver todos os ${matchedCount} projetos`;
+            }
         }
     } else {
         showAllBtn.hidden = true;
@@ -194,6 +220,62 @@ if (showAllBtn) {
 }
 
 applyFilter();
+
+// ===== EXPERIENCE SHOW ALL =====
+const timelineItems = document.querySelectorAll('.timeline-item');
+const showAllExpBtn = document.getElementById('show-all-experience');
+const showAllExpBtnLabel = showAllExpBtn ? showAllExpBtn.querySelector('.btn-show-all-label') : null;
+const INITIAL_VISIBLE_EXP = 3;
+let isExpExpanded = false;
+
+function applyExpFilter() {
+    timelineItems.forEach((item, idx) => {
+        if (!isExpExpanded && idx >= INITIAL_VISIBLE_EXP) {
+            item.classList.add('is-hidden');
+        } else {
+            item.classList.remove('is-hidden');
+        }
+    });
+
+    if (!showAllExpBtn) return;
+
+    const totalCount = timelineItems.length;
+    if (totalCount > INITIAL_VISIBLE_EXP) {
+        showAllExpBtn.hidden = false;
+        showAllExpBtn.setAttribute('aria-expanded', isExpExpanded ? 'true' : 'false');
+        if (showAllExpBtnLabel) {
+            const isEN = document.body.classList.contains('lang-en');
+            if (isExpExpanded) {
+                showAllExpBtnLabel.textContent = isEN ? 'Show fewer experiences' : 'Ver menos experiências';
+            } else {
+                showAllExpBtnLabel.textContent = isEN
+                    ? `Show all ${totalCount} experiences`
+                    : `Ver todas as ${totalCount} experiências`;
+            }
+        }
+    } else {
+        showAllExpBtn.hidden = true;
+    }
+}
+
+if (showAllExpBtn) {
+    showAllExpBtn.addEventListener('click', () => {
+        isExpExpanded = !isExpExpanded;
+        applyExpFilter();
+        if (!isExpExpanded) {
+            const expSection = document.getElementById('experience');
+            if (expSection) expSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+}
+
+applyExpFilter();
+
+// Refresh dynamic labels when language changes
+document.addEventListener('languagechange', () => {
+    applyFilter();
+    applyExpFilter();
+});
 
 // ===== SMOOTH SCROLL FOR NAVIGATION =====
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
