@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css?v=6">
+    <link rel="stylesheet" href="css/style.css?v=8">
 </head>
 <body data-lang="pt">
     <!-- Navigation -->
@@ -87,57 +87,26 @@
                         <span class="lang-en">Hire Me</span>
                     </a>
                 </div>
-                <div class="hero-stats">
-                    <div class="stat">
-                        <span class="stat-number" data-target="15">0</span><span class="stat-plus">+</span>
-                        <span class="stat-label">
-                            <span class="lang-pt">Anos em TI</span>
-                            <span class="lang-en">Years in IT</span>
-                        </span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-number" data-target="8">0</span><span class="stat-plus">+</span>
-                        <span class="stat-label">
-                            <span class="lang-pt">Anos em Data/IA</span>
-                            <span class="lang-en">Years in Data/AI</span>
-                        </span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-number" data-target="50">0</span><span class="stat-plus">+</span>
-                        <span class="stat-label">
-                            <span class="lang-pt">Projetos Entregues</span>
-                            <span class="lang-en">Projects Delivered</span>
-                        </span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-number" data-target="9">0</span>
-                        <span class="stat-label">
-                            <span class="lang-pt">Setores Atendidos</span>
-                            <span class="lang-en">Industries Served</span>
-                        </span>
-                    </div>
-                </div>
             </div>
             <div class="hero-image">
                 <div class="image-wrapper">
                     <div class="image-glow"></div>
-                    <img src="img/walterjr.png" alt="Walter José Horning Junior" loading="eager">
+                    <picture>
+                        <source
+                            type="image/webp"
+                            srcset="img/walterjr-320.webp 320w, img/walterjr-640.webp 640w, img/walterjr-1024.webp 1024w"
+                            sizes="(max-width: 600px) 280px, (max-width: 900px) 360px, 460px">
+                        <img
+                            src="img/walterjr-640.jpg"
+                            srcset="img/walterjr-640.jpg 640w, img/walterjr-1024.jpg 1024w"
+                            sizes="(max-width: 600px) 280px, (max-width: 900px) 360px, 460px"
+                            width="460" height="460"
+                            alt="Walter José Horning Junior"
+                            loading="eager"
+                            decoding="async"
+                            fetchpriority="high">
+                    </picture>
                     <div class="image-ring"></div>
-                </div>
-                <div class="expertise-block">
-                    <span class="expertise-label">
-                        <span class="lang-pt">Especialidades</span>
-                        <span class="lang-en">Expertise</span>
-                    </span>
-                    <div class="expertise-chips">
-                        <span class="chip"><i class="fas fa-chart-line"></i> Data Science</span>
-                        <span class="chip"><i class="fas fa-brain"></i> AI/ML</span>
-                        <span class="chip"><i class="fas fa-robot"></i> GenAI</span>
-                        <span class="chip"><i class="fas fa-server"></i> Data Engineering</span>
-                        <span class="chip"><i class="fas fa-cogs"></i> Process Automation</span>
-                        <span class="chip"><i class="fas fa-chart-bar"></i> Analytics</span>
-                        <span class="chip"><i class="fas fa-database"></i> Big Data</span>
-                    </div>
                 </div>
             </div>
         </div>
@@ -162,6 +131,36 @@
                     <span class="lang-pt">Unindo Data Science <br>e Impacto no Negócio</span>
                     <span class="lang-en">Bridging Data Science <br>& Business Impact</span>
                 </h2>
+            </div>
+            <div class="about-stats">
+                <div class="stat">
+                    <span class="stat-number" data-target="15">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">
+                        <span class="lang-pt">Anos em TI</span>
+                        <span class="lang-en">Years in IT</span>
+                    </span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-target="8">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">
+                        <span class="lang-pt">Anos em Data/IA</span>
+                        <span class="lang-en">Years in Data/AI</span>
+                    </span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-target="50">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">
+                        <span class="lang-pt">Projetos Entregues</span>
+                        <span class="lang-en">Projects Delivered</span>
+                    </span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-target="9">0</span>
+                    <span class="stat-label">
+                        <span class="lang-pt">Setores Atendidos</span>
+                        <span class="lang-en">Industries Served</span>
+                    </span>
+                </div>
             </div>
             <div class="about-content">
                 <div class="about-text">
@@ -200,6 +199,15 @@
                         and teach Python to professionals transitioning into tech. I believe the best solutions
                         come from combining creative thinking with rigorous technical execution.
                     </p>
+                    <div class="expertise-chips about-chips">
+                        <span class="chip"><i class="fas fa-chart-line"></i> Data Science</span>
+                        <span class="chip"><i class="fas fa-brain"></i> AI/ML</span>
+                        <span class="chip"><i class="fas fa-robot"></i> GenAI</span>
+                        <span class="chip"><i class="fas fa-server"></i> Data Engineering</span>
+                        <span class="chip"><i class="fas fa-cogs"></i> Process Automation</span>
+                        <span class="chip"><i class="fas fa-chart-bar"></i> Analytics</span>
+                        <span class="chip"><i class="fas fa-database"></i> Big Data</span>
+                    </div>
                     <blockquote class="about-quote">
                         <span class="lang-pt">"O que me move não é o que é novo, mas o que ainda não foi imaginado."</span>
                         <span class="lang-en">"What moves me is not what is new, but what is not yet imagined."</span>
@@ -594,12 +602,129 @@
                     <span class="lang-en">Portfolio</span>
                 </span>
                 <h2 class="section-title">
-                    <span class="lang-pt">Principais Projetos</span>
-                    <span class="lang-en">Featured Projects</span>
+                    <span class="lang-pt">Cases em Destaque</span>
+                    <span class="lang-en">Flagship Case Studies</span>
                 </h2>
                 <p class="section-subtitle">
-                    <span class="lang-pt">Uma seleção de projetos de impacto em diferentes setores. Clique em uma categoria para filtrar.</span>
-                    <span class="lang-en">A selection of impactful projects across industries. Click on any category to filter.</span>
+                    <span class="lang-pt">Quatro projetos que resumem o tipo de impacto que entrego.</span>
+                    <span class="lang-en">Four projects that capture the kind of impact I deliver.</span>
+                </p>
+            </div>
+
+            <div class="featured-projects">
+                <article class="featured-card" data-category="engineering">
+                    <div class="featured-metric">
+                        <span class="featured-metric-value">6.000x</span>
+                        <span class="featured-metric-label">
+                            <span class="lang-pt">mais rápido</span>
+                            <span class="lang-en">faster</span>
+                        </span>
+                    </div>
+                    <div class="featured-body">
+                        <span class="featured-tag"><i class="fas fa-bolt"></i> Data Engineering · ALLOS</span>
+                        <h3>
+                            <span class="lang-pt">Pipelines de Big Data 6.000x mais rápidos</span>
+                            <span class="lang-en">Big Data Pipelines, 6,000× Faster</span>
+                        </h3>
+                        <p class="lang-pt"><strong>Problema:</strong> jobs em batch que rodavam por horas atrasavam decisões executivas em uma operadora de shoppings.</p>
+                        <p class="lang-en"><strong>Problem:</strong> hours-long batch jobs were delaying executive decisions at a shopping-mall operator.</p>
+                        <p class="lang-pt"><strong>Ação:</strong> rearquitetei o pipeline em PySpark + Delta Lake, com particionamento e cache estratégico, transformando processamento em near-real-time.</p>
+                        <p class="lang-en"><strong>Action:</strong> re-architected the pipeline in PySpark + Delta Lake with strategic partitioning and caching, turning batch into near real-time.</p>
+                        <p class="lang-pt"><strong>Resultado:</strong> 6.000× de speedup end-to-end e dashboards executivos com dados frescos.</p>
+                        <p class="lang-en"><strong>Result:</strong> 6,000× end-to-end speedup and fresh data on executive dashboards.</p>
+                        <div class="project-tech">
+                            <span>PySpark</span><span>Databricks</span><span>Delta Lake</span><span>Airflow</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="featured-card" data-category="optimization">
+                    <div class="featured-metric">
+                        <span class="featured-metric-value">-13%</span>
+                        <span class="featured-metric-label">
+                            <span class="lang-pt">custo · +22% satisfação</span>
+                            <span class="lang-en">cost · +22% satisfaction</span>
+                        </span>
+                    </div>
+                    <div class="featured-body">
+                        <span class="featured-tag"><i class="fas fa-route"></i> Optimization · Delivery Center</span>
+                        <h3>
+                            <span class="lang-pt">Otimização de Rotas Last-Mile</span>
+                            <span class="lang-en">Last-Mile Route Optimization</span>
+                        </h3>
+                        <p class="lang-pt"><strong>Problema:</strong> custos de entrega altos e janelas estouradas em operação last-mile.</p>
+                        <p class="lang-en"><strong>Problem:</strong> high delivery costs and missed time windows in a last-mile operation.</p>
+                        <p class="lang-pt"><strong>Ação:</strong> uni predições de ML a algoritmos bio-inspirados (genéticos + colônia de formigas) considerando tráfego, capacidade e janelas em tempo real.</p>
+                        <p class="lang-en"><strong>Action:</strong> combined ML predictions with bio-inspired algorithms (genetic + ant colony) factoring in traffic, capacity and time windows in real time.</p>
+                        <p class="lang-pt"><strong>Resultado:</strong> 13% de redução de custo operacional e 22% a mais de satisfação do cliente.</p>
+                        <p class="lang-en"><strong>Result:</strong> 13% operational cost reduction and 22% higher customer satisfaction.</p>
+                        <div class="project-tech">
+                            <span>Python</span><span>OR-Tools</span><span>Genetic Algorithms</span><span>FastAPI</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="featured-card" data-category="genai">
+                    <div class="featured-metric">
+                        <span class="featured-metric-value">-40%</span>
+                        <span class="featured-metric-label">
+                            <span class="lang-pt">tickets de suporte</span>
+                            <span class="lang-en">support tickets</span>
+                        </span>
+                    </div>
+                    <div class="featured-body">
+                        <span class="featured-tag"><i class="fas fa-comments"></i> Generative AI · Enterprise</span>
+                        <h3>
+                            <span class="lang-pt">Assistente de Conhecimento com RAG</span>
+                            <span class="lang-en">RAG-Powered Knowledge Assistant</span>
+                        </h3>
+                        <p class="lang-pt"><strong>Problema:</strong> 50.000+ documentos internos eram inacessíveis e geravam volume alto de tickets de suporte.</p>
+                        <p class="lang-en"><strong>Problem:</strong> 50,000+ internal docs were hard to search and drove a heavy support-ticket load.</p>
+                        <p class="lang-pt"><strong>Ação:</strong> arquitetei um sistema RAG com LangChain, FAISS e GPT-4/Claude que devolve respostas instantâneas com fontes citadas.</p>
+                        <p class="lang-en"><strong>Action:</strong> built a RAG system with LangChain, FAISS and GPT-4/Claude that returns instant, sourced answers.</p>
+                        <p class="lang-pt"><strong>Resultado:</strong> 40% menos tickets de suporte e tempo de resposta caindo de horas para segundos.</p>
+                        <p class="lang-en"><strong>Result:</strong> 40% fewer support tickets and response time down from hours to seconds.</p>
+                        <div class="project-tech">
+                            <span>LangChain</span><span>FAISS</span><span>OpenAI</span><span>FastAPI</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="featured-card" data-category="automation">
+                    <div class="featured-metric">
+                        <span class="featured-metric-value">200K+</span>
+                        <span class="featured-metric-label">
+                            <span class="lang-pt">estabelecimentos enriquecidos</span>
+                            <span class="lang-en">facilities enriched</span>
+                        </span>
+                    </div>
+                    <div class="featured-body">
+                        <span class="featured-tag"><i class="fas fa-heart-pulse"></i> Automation · Funcional Health</span>
+                        <h3>
+                            <span class="lang-pt">Pipeline de Saúde Orquestrado por LLM</span>
+                            <span class="lang-en">LLM-Orchestrated Healthcare Pipeline</span>
+                        </h3>
+                        <p class="lang-pt"><strong>Problema:</strong> a curadoria de dados de estabelecimentos de saúde do CNES/DataSUS era manual e não escalava.</p>
+                        <p class="lang-en"><strong>Problem:</strong> manual curation of CNES/DataSUS healthcare data didn't scale.</p>
+                        <p class="lang-pt"><strong>Ação:</strong> construí um pipeline end-to-end com um crawler de scraping controlado por LLM que enriquece e valida dados sem regras frágeis.</p>
+                        <p class="lang-en"><strong>Action:</strong> built an end-to-end pipeline with an LLM-controlled scraping crawler that enriches and validates data without brittle rules.</p>
+                        <p class="lang-pt"><strong>Resultado:</strong> 200 mil+ estabelecimentos enriquecidos automaticamente, eliminando o trabalho manual.</p>
+                        <p class="lang-en"><strong>Result:</strong> 200K+ facilities enriched automatically, eliminating manual work.</p>
+                        <div class="project-tech">
+                            <span>LangChain</span><span>Playwright</span><span>Airflow</span><span>PostgreSQL</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="more-projects-header">
+                <h3 class="more-projects-title">
+                    <span class="lang-pt">Mais Projetos</span>
+                    <span class="lang-en">More Projects</span>
+                </h3>
+                <p class="more-projects-subtitle">
+                    <span class="lang-pt">Filtre por categoria para explorar o portfólio completo.</span>
+                    <span class="lang-en">Filter by category to explore the full portfolio.</span>
                 </p>
             </div>
 

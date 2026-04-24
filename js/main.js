@@ -144,7 +144,7 @@ document.querySelectorAll('.timeline-item, .project-card, .skill-category, .high
 });
 
 // Counter animation observer
-const statsSection = document.querySelector('.hero-stats');
+const statsSection = document.querySelector('.about-stats');
 if (statsSection) {
     const statsObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
